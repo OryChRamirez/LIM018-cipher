@@ -10,12 +10,12 @@
     <title>Cipher</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="body">
     <div id="inicio" class="inicio">
         <h1>Cifrador de Mensajes</h1>
         <h3>¡Bienvenida! Para cifrar o descifrar un mensaje debes hacer clic en CIFRADOR y seguir las instrucciones.</h3>
         <div id="rebeldes">
-            <button id="btnCifrador1" class="btn">CIFRADOR</button>
+            <button id="btnCifrador" class="btn">CIFRADOR</button>
             <button id="btnInfo" class="btn">INFORMACIÓN</button>
         </div>    
     </div>
@@ -32,24 +32,24 @@
         </div>    
         <div    id="caja3">
         <h4 id="txtDesplazamiento">Desplazamiento:</h4>
-        <input id="Desplazamiento"type="number">
+        <input id="desplazamiento" type="number">
         </div>
-        <button id="btnCifrador2" class="btn">CIFRAR</button>
+        <button id="btnCifrar" class="btn">CIFRAR</button>
         <button id="btnDescifrar"  class="btn">DESCIFRAR</button>
         <button id="btnLimpiar"  class="btn">LIMPIAR</button>
 <h5>Intrucciones</h5>
         <p>1 - Ingresa en el recuadro de la izquierda tu mensaje a codificar o decodificar.<br>
             2- Ingresa en el recuadro inferior la cantidad de desplazamientos que deseas aplicar.<br>
             3- Presiona el botón CIFRAR o DESCIFRAR según lo que desees aplicar a tu mensaje.<br>
-            4- Una vez termines puedes limpiar los recuadros de texto presionando el botón LIMPIAR.<br>
-            5- Presiona el botón SALIR para dirigirte a una página diferente en caso.</p>
+            4- Una vez termines puedes limpiar los recuadros de texto presionando el botón LIMPIAR.
+        </p>
     </div>
 
-    <div id="instruccion" >
-        <h1>¿Qué es un Cifrador de Mensajes?</h4>
+    <div id="informacion" >
+        <h1>¿Qué es un Cifrador de Mensajes?</h1>
         <p class="instruccion">Es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
