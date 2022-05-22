@@ -7,7 +7,6 @@
 html{
     overflow: hidden;
     background: linear-gradient(160deg, #C0937A 30%, #CCDDE2 70%);
- 
 }
 body{
     display: flex;
