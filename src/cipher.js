@@ -29,9 +29,9 @@ const cipher = {
   }},
   decode : function (string,offset){
     let decodeMayus ="";
-      // let decodeMinus ="";
+      let decodeMinus ="";
       let decodificador="";
-      // let decodificador2="";
+      let decodificador2="";
       offset = parseInt(offset);
       if(string === string.toUpperCase()){
         for(let i=0;i<=string.length;i++){
@@ -43,8 +43,16 @@ const cipher = {
           decodeMayus = decodeMayus + String.fromCharCode(decodificador);
       }}
       return decodeMayus;
-    }      
-  }
-
+    }else if(string === string.toLowerCase()){
+      for(let i=0;i<=string.length;i++){
+        decodificador2 = (string.charCodeAt(i) - 97 - offset)%26 + 97;
+        if(decodificador2 < 65){
+        decodificador2 = (string.charCodeAt(i) - 97 - offset)%26 + 97 +26;
+          decodeMinus = decodeMinus + String.fromCharCode(decodificador2);
+        }else{
+          decodeMinus = decodeMinus + String.fromCharCode(decodificador2);      
+      }}
+      return decodeMinus;
+    }}      
   }
 export default cipher;
