@@ -32,6 +32,7 @@ function btnCifrado(){
     let string = document.getElementById('mensaje').value;
     let offset = document.getElementById('offset').value;
     document.getElementById('cifradoDescifrado').value = cipher.encode(string, offset);
+    document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje Cifrado';
   }
 
   let btnDescifrar = document.getElementById('btnDescifrar');
@@ -41,4 +42,16 @@ function btnCifrado(){
     let string = document.getElementById('mensaje').value;
     let offset = document.getElementById('offset').value;
     document.getElementById('cifradoDescifrado').value = cipher.decode(string, offset);
+    document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje Descifrado';
+
+  }
+  let btnLimpiar = document.getElementById('btnLimpiar');
+  btnLimpiar.addEventListener('click',limpiar);
+  
+  function limpiar(){
+    document.getElementById('cifradoDescifrado').value = "";
+    document.getElementById('mensaje').value = "";
+    document.getElementById('offset').value = "";
+    document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje';
+
   }

@@ -1,58 +1,63 @@
 const cipher = {
-  encode : function(string, offset){
-      let codeMayus ="";
-      let codeMinus ="";
+  encode : function(offset,string){
+      let codeLetras ="";
       let codificador="";
-      let codificador2="";
-
       offset = parseInt(offset);
-    if(string === string.toUpperCase()){
+      if(offset !=0 && string != " " && offset !="" && string !=""){
       for(let i=0;i<=string.length;i++){
-        codificador = (string.charCodeAt(i) - 65 + offset)%26 + 65;
-        if(codificador < 65){
-       codificador =(string.charCodeAt(i) - 65 + offset)%26 + 65 + 26;
-        codeMayus = codeMayus + String.fromCharCode(codificador);
+          codificador = string.charCodeAt(i);
+          if(codificador >= 65 && codificador <= 90){
+          codificador = (string.charCodeAt(i) -65 + offset)%26 + 65;
+            if(codificador < 65){
+              codificador = (string.charCodeAt(i) - 65 + offset)%26 + 65 + 26;
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }else{
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }
+        }else if(codificador >=97 && codificador <=122){
+          codificador = (string.charCodeAt(i) -97 + offset)%26 + 97;
+            if(codificador < 97){
+              codificador = (string.charCodeAt(i) - 97 + offset)%26 + 97 + 26;
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }else{
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }
         }else{
-        codeMayus = codeMayus + String.fromCharCode(codificador);
-    }}
-    return codeMayus;
-  }else if(string === string.toLowerCase()){
-    for(let i=0;i<=string.length;i++){
-      codificador2 = (string.charCodeAt(i) - 97 + offset)%26 + 97;
-      if(codificador2 < 65){
-      codificador2 = (string.charCodeAt(i) - 97 + offset)%26 + 97 +26;
-        codeMinus = codeMinus + String.fromCharCode(codificador2);
-      }else{
-        codeMinus = codeMinus + String.fromCharCode(codificador2);      
-    }}
-    return codeMinus;
+          codeLetras = codeLetras + String.fromCharCode(codificador);
+        }
+      }
+  return codeLetras;
   }},
-  decode : function (string,offset){
-    let decodeMayus ="";
-      let decodeMinus ="";
-      let decodificador="";
-      let decodificador2="";
+
+  decode : function(offset,string){
+    let codeLetras ="";
+      let codificador="";
       offset = parseInt(offset);
-      if(string === string.toUpperCase()){
-        for(let i=0;i<=string.length;i++){
-          decodificador = (string.charCodeAt(i) - 65 - offset)%26 + 65;
-          if(decodificador < 65){
-            decodificador =(string.charCodeAt(i) - 65 - offset)%26 + 26 + 65;
-            decodeMayus = decodeMayus + String.fromCharCode(decodificador);
-                    }else{
-          decodeMayus = decodeMayus + String.fromCharCode(decodificador);
-      }}
-      return decodeMayus;
-    }else if(string === string.toLowerCase()){
       for(let i=0;i<=string.length;i++){
-        decodificador2 = (string.charCodeAt(i) - 97 - offset)%26 + 97;
-        if(decodificador2 < 65){
-        decodificador2 = (string.charCodeAt(i) - 97 - offset)%26 + 97 +26;
-          decodeMinus = decodeMinus + String.fromCharCode(decodificador2);
+          codificador = string.charCodeAt(i);
+          if(codificador >= 65 && codificador <= 90){
+          codificador = (string.charCodeAt(i) -65 - offset)%26 + 65;
+            if(codificador < 65){
+              codificador = (string.charCodeAt(i) - 65 - offset)%26 + 65 + 26;
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }else{
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }
+        }else if(codificador >=97 && codificador <=122){
+          codificador = (string.charCodeAt(i) -97 - offset)%26 + 97;
+            if(codificador < 97){
+              codificador = (string.charCodeAt(i) - 97 - offset)%26 + 97 + 26;
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }else{
+              codeLetras = codeLetras + String.fromCharCode(codificador);
+            }
         }else{
-          decodeMinus = decodeMinus + String.fromCharCode(decodificador2);      
-      }}
-      return decodeMinus;
-    }}      
+          codeLetras = codeLetras + String.fromCharCode(codificador);
+        }
+      }
+  return codeLetras;
+    }
+
   }
+
 export default cipher;
