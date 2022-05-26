@@ -4,7 +4,7 @@ const cipher = {
       let codificador="";
       offset = parseInt(offset);
     
-      for(let i=0;i<=string.length;i++){
+      for(let i=0;i<string.length;i++){
           codificador = string.charCodeAt(i);
           if(codificador >= 65 && codificador <= 90){
           codificador = (string.charCodeAt(i) -65 + offset)%26 + 65;
@@ -33,7 +33,7 @@ const cipher = {
     let codeLetras ="";
       let codificador="";
       offset = parseInt(offset);
-      for(let i=0;i<=string.length;i++){
+      for(let i=0;i<string.length;i++){
           codificador = string.charCodeAt(i);
           if(codificador >= 65 && codificador <= 90){
           codificador = (string.charCodeAt(i) -65 - offset)%26 + 65;
