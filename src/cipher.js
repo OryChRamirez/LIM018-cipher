@@ -3,7 +3,7 @@ const cipher = {
       let codeLetras ="";
       let codificador="";
       offset = parseInt(offset);
-    
+    if(string !="" && offset !="" && string !=" " && offset != 0 ){
       for(let i=0;i<string.length;i++){
           codificador = string.charCodeAt(i);
           if(codificador >= 65 && codificador <= 90){
@@ -27,12 +27,17 @@ const cipher = {
         }
       }
   return codeLetras;
+    }else{
+      // eslint-disable-next-line no-console
+      console.toThrow(TypeError);
+    }
   },
 
   decode : function(offset,string){
     let codeLetras ="";
       let codificador="";
       offset = parseInt(offset);
+      if(string !="" && offset !="" && string !=" " && offset != 0 ){
       for(let i=0;i<string.length;i++){
           codificador = string.charCodeAt(i);
           if(codificador >= 65 && codificador <= 90){
@@ -56,8 +61,11 @@ const cipher = {
         }
       }
   return codeLetras;
-    }
+       }else{
+      // eslint-disable-next-line no-console
+     console.toThrow(TypeError);
+}
 
-  }
+  }}
 
 export default cipher;
