@@ -11,27 +11,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="body">
-    <div id="inicio" class="inicio">
+    <section id="inicio" class="inicio">
         <h1>Cifrador de Mensajes</h1>
         <h3>¡Bienvenida! Para cifrar o descifrar un mensaje debes hacer clic en CIFRADOR y seguir las instrucciones.</h3>
-        <div id="rebeldes">
+        <div id="contenedorInicio">
             <button id="btnCifrador" class="btn">CIFRADOR</button>
             <button id="btnInfo" class="btn">INFORMACIÓN</button>
-            <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalir1" class="btn">SALIR</button></a>
+            <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalirInicio" class="btn">SALIR</button></a>
         </div>    
-    </div>
+    </section>
    
-    <div id="cifrador" class="cifrador">
+    <section id="cifrador" class="cifrador">
         <h1>Cifrador de Mensajes</h1>
-        <div    id="caja1">
+        <header    id="contenedorCifrador">
         <h4 id="txtIngresarMensaje" class="ingresarMensaje">Ingresa tu mensaje:</h4> 
         <textarea type="text" name="mensaje" id="mensaje" class="cajaMsj"></textarea>
-        </div>
-        <div    id="caja2">
+        </header>
+        <div    id="contenedorDescifrador">
         <h4 id="txtEnviarMensaje">Mensaje</h4>
-        <textarea type="text" readonly id="cifradoDescifrado" class="cajaMsj"></textarea>
+        <textarea type="text" readonly id="mensajeCifradoDescifrado" class="cajaMsj"></textarea>
         </div>    
-        <div    id="caja3">
+        <div    id="cajaDesplazamiento">
         <h4 id="txtoffset">Desplazamiento:</h4>
         <input id="offset" type="number">
         <button id="copy">✎Copiar</button>
@@ -40,8 +40,8 @@
         <button id="btnCifrar" class="btn">CIFRAR</button>
         <button id="btnDescifrar"  class="btn">DESCIFRAR</button>
         <button id="btnLimpiar"  class="btn">LIMPIAR</button>
-        <button id="btnVolver1" class="btn">INICIO</button>
-        <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalir2" class="btn">SALIR</button></a>
+        <button id="btnVolverCifradorInicio" class="btn">INICIO</button>
+        <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalirCifrador" class="btn">SALIR</button></a>
         </div>
 
 <h5>Intrucciones</h5>
@@ -50,17 +50,17 @@
             3- Presiona el botón CIFRAR o DESCIFRAR según lo que desees aplicar a tu mensaje.<br>
             4- Una vez termines puedes limpiar los recuadros de texto presionando el botón LIMPIAR.
         </p>
-    </div>
+    </section>
 
-    <div id="informacion" >
+    <section id="informacion" >
         <h1>¿Qué es un Cifrador de Mensajes?</h1>
         <p class="informacion">Es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.</p>
         <div id="cajaBtnInfo" >
-            <button id="btnCifrador2" class="btn">CIFRADOR</button>
-            <button id="btnVolver2" class="btn">INICIO</button>
-            <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalir3" class="btn">SALIR</button></a>
+            <button id="btnCifradorInfo" class="btn">CIFRADOR</button>
+            <button id="btnVolverInfoInicio" class="btn">INICIO</button>
+            <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalirInfo" class="btn">SALIR</button></a>
 
-        </div>
+        </section>
 
     </div>
 

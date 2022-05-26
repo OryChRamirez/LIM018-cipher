@@ -77,7 +77,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 </p></details>
 
 ### CSS
-
+ 
 - [ ] **Uso de selectores de CSS**
 
   <details><summary>Links</summary><p>

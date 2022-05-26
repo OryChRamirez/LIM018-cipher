@@ -28,8 +28,7 @@ const cipher = {
       }
   return codeLetras;
     }else{
-      // eslint-disable-next-line no-console
-      console.toThrow(TypeError);
+      throw new TypeError();
     }
   },
 
@@ -61,9 +60,8 @@ const cipher = {
         }
       }
   return codeLetras;
-       }else{
-      // eslint-disable-next-line no-console
-     console.toThrow(TypeError);
+    }else{
+      throw new TypeError();
 }
 
   }}

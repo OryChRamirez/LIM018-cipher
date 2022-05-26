@@ -43,7 +43,7 @@ h3{
     text-align: center;
 }
 
-#rebeldes{
+#contenedorInicio{
     display: flex;
     width: 600px;
     height: 100px;
@@ -76,8 +76,8 @@ h4{
     font-family: 'Caesar Dressing', cursive;
     font-size: 20px;
     font-weight: bold;
-    width: 180px;
-    height:40px;
+    width: 150px;
+    height:34px;
     border-radius: 10px;
     border: none;
     box-shadow: 0 0 30px #fff;;
@@ -97,7 +97,7 @@ h4{
     width: 900px; 
     text-align: center;
 }
-#caja1{
+#contenedorCifrador{
     margin-top: 10px;
     display: inline-flex;
     width: 49%;
@@ -106,7 +106,7 @@ h4{
     flex-direction: column;
 
 }
-#caja2{
+#contenedorDescifrador{
     margin-top: 10px;
     display: inline-flex;
 
@@ -123,7 +123,7 @@ h4{
     resize: none;
     padding: 5px;
 }
-#caja3{
+#cajaDesplazamiento{
     display: flex;
     width: 900px;
     height: 40px;
@@ -158,6 +158,7 @@ p,h5{
     height: 100px;
     flex-wrap:  wrap ;
     justify-content: space-around;
+    align-items: center;
 }
 
 #cajaBtnCifrador{
@@ -176,10 +177,10 @@ p,h5{
     font-family: 'Quicksand', sans-serif;
     font-size: 2.3em;
 }
-#btnSalir1, #btnSalir2, #btnSalir3{
+#btnSalirInicio, #btnSalirInfo, #btnSalirCifrador{
     background-color: orange;
 }
-#btnSalir2, #btnVolver1, #btnLimpiar, #btnDescifrar, #btnCifrar{
+#btnSalirCifrador, #btnVolverCifrador, #btnLimpiar, #btnDescifrar, #btnCifrar{
     margin:0 10px;
 }
 #copy{

@@ -8,8 +8,8 @@ btnCifrador.addEventListener('click',pantallaCifrador);
 let btnInfo = document.getElementById('btnInfo');
 btnInfo.addEventListener('click',pantallaInfo);
 
-let btnCifrador2 = document.getElementById('btnCifrador2');
-btnCifrador2.addEventListener('click',pantallaCifrador);
+let btnCifradorInfo = document.getElementById('btnCifradorInfo');
+btnCifradorInfo.addEventListener('click',pantallaCifrador);
 
 function pantallaCifrador(){
     document.getElementById('inicio').style.display = 'none';
@@ -31,7 +31,7 @@ btnCifrar.addEventListener('click',btnCifrado);
 function btnCifrado(){
     let string = document.getElementById('mensaje').value;
     let offset = document.getElementById('offset').value;
-    document.getElementById('cifradoDescifrado').value = cipher.encode(offset,string);
+    document.getElementById('mensajeCifradoDescifrado').value = cipher.encode(offset,string);
     document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje Cifrado';
   }
 
@@ -41,7 +41,7 @@ function btnCifrado(){
   function btnDescifrado(){
     let string = document.getElementById('mensaje').value;
     let offset = document.getElementById('offset').value;
-    document.getElementById('cifradoDescifrado').value = cipher.decode(offset,string);
+    document.getElementById('mensajeCifradoDescifrado').value = cipher.decode(offset,string);
     document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje Descifrado';
 
   }
@@ -49,16 +49,16 @@ function btnCifrado(){
   btnLimpiar.addEventListener('click',limpiar);
   
   function limpiar(){
-    document.getElementById('cifradoDescifrado').value = "";
+    document.getElementById('mensajeCifradoDescifrado').value = "";
     document.getElementById('mensaje').value = "";
     document.getElementById('offset').value = "";
     document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje';
 
   }
 
-    let inicio = document.getElementById('btnVolver1');
+    let inicio = document.getElementById('btnVolverCifradorInicio');
     inicio.addEventListener('click',pantallaInicio);
-    let inicio2 = document.getElementById('btnVolver2');
+    let inicio2 = document.getElementById('btnVolverInfoInicio');
     inicio2.addEventListener('click',pantallaInicio);
 
     function pantallaInicio(){
@@ -68,7 +68,7 @@ function btnCifrado(){
       document.getElementById("body").style.backgroundImage = 'url(img/juliocesar007.png)';
     }
 
-    let txtCopy = document.getElementById('cifradoDescifrado');
+    let txtCopy = document.getElementById('mensajeCifradoDescifrado');
     let copy = document.getElementById('copy');
     copy.addEventListener('click',copiado);
 
