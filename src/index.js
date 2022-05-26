@@ -31,7 +31,7 @@ btnCifrar.addEventListener('click',btnCifrado);
 function btnCifrado(){
     let string = document.getElementById('mensaje').value;
     let offset = document.getElementById('offset').value;
-    document.getElementById('cifradoDescifrado').value = cipher.encode(string, offset);
+    document.getElementById('cifradoDescifrado').value = cipher.encode(offset,string);
     document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje Cifrado';
   }
 
@@ -41,7 +41,7 @@ function btnCifrado(){
   function btnDescifrado(){
     let string = document.getElementById('mensaje').value;
     let offset = document.getElementById('offset').value;
-    document.getElementById('cifradoDescifrado').value = cipher.decode(string, offset);
+    document.getElementById('cifradoDescifrado').value = cipher.decode(offset,string);
     document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje Descifrado';
 
   }
@@ -55,3 +55,24 @@ function btnCifrado(){
     document.getElementById('txtEnviarMensaje').innerHTML = 'Mensaje';
 
   }
+
+    let inicio = document.getElementById('btnVolver1');
+    inicio.addEventListener('click',pantallaInicio);
+    let inicio2 = document.getElementById('btnVolver2');
+    inicio2.addEventListener('click',pantallaInicio);
+
+    function pantallaInicio(){
+      document.getElementById('inicio').style.display = 'block';
+      document.getElementById('informacion').style.display = 'none';
+      document.getElementById('cifrador').style.display = 'none';
+      document.getElementById("body").style.backgroundImage = 'url(img/juliocesar007.png)';
+    }
+
+    let txtCopy = document.getElementById('cifradoDescifrado');
+    let copy = document.getElementById('copy');
+    copy.addEventListener('click',copiado);
+
+    function copiado(){
+      txtCopy.select();
+      document.execCommand('copy');
+    }

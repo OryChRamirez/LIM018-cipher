@@ -35,8 +35,7 @@ h3{
 }
 
 
-.inicio{
-    margin-left: 20px;
+.inicio{    margin-left: 20px;
     margin-top: 20px;
     height: 500px;
     width: 900px; 
@@ -50,16 +49,14 @@ h3{
     height: 100px;
     margin: auto;
     margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
 }
-#btnCifrador, #btnInfo{
-    margin: auto;
-    margin-bottom: 0px;
-}
+
 
 
 h4{
     display: inline-block;
-
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3em;
     text-shadow: 0 0 30px  #fff;
@@ -83,8 +80,7 @@ h4{
     height:40px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 0 30px #fff;
-    margin: 30px;
+    box-shadow: 0 0 30px #fff;;
     cursor: pointer;
 }
 .btn:hover{
@@ -128,7 +124,7 @@ h4{
     padding: 5px;
 }
 #caja3{
-    display: inline-flex;
+    display: flex;
     width: 900px;
     height: 40px;
     align-items: center;
@@ -155,18 +151,43 @@ p,h5{
     margin-top: 50px;
     align-items: center;
 }
-#caja4{
+#cajaBtnInfo{
     display: flex;
-    width: 100vw;
-    height: 50px;
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    flex-wrap:  wrap ;
+    justify-content: space-around;
 }
-#btnCifrador2{
-    margin: auto;
+
+#cajaBtnCifrador{
+    margin: 0 auto;
+    display: flex;
+    width: 600px;
+    height: 100px;
+    flex-wrap:  wrap ;
+    align-items: center;
+    justify-content: center;
 }
-.instruccion{
+.informacion{
     background-color: rgb(255, 255, 255, .5);
     text-align: center;
-    margin: 50px;
+    margin: 50px 50px 0px 50px;
     font-family: 'Quicksand', sans-serif;
     font-size: 2.3em;
+}
+#btnSalir1, #btnSalir2, #btnSalir3{
+    background-color: orange;
+}
+#btnSalir2, #btnVolver1, #btnLimpiar, #btnDescifrar, #btnCifrar{
+    margin:0 10px;
+}
+#copy{
+    background-color: rgb(255, 255, 255, .2);
+    margin-left: 25px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
 }

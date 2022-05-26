@@ -3,7 +3,7 @@ const cipher = {
       let codeLetras ="";
       let codificador="";
       offset = parseInt(offset);
-      if(offset !=0 && string != " " && offset !="" && string !=""){
+    
       for(let i=0;i<=string.length;i++){
           codificador = string.charCodeAt(i);
           if(codificador >= 65 && codificador <= 90){
@@ -27,7 +27,7 @@ const cipher = {
         }
       }
   return codeLetras;
-  }},
+  },
 
   decode : function(offset,string){
     let codeLetras ="";
