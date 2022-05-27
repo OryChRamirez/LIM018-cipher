@@ -76,3 +76,5 @@ function btnCifrado(){
       txtCopy.select();
       document.execCommand('copy');
     }
+
+    
