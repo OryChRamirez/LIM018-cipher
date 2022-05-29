@@ -34,6 +34,12 @@ h3{
     text-shadow: 0 0 30px  #fff;
 }
 
+h4{
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    text-shadow: 0 0 30px  #fff;  
+}
 
 .inicio{    margin-left: 20px;
     margin-top: 20px;
@@ -53,15 +59,6 @@ h3{
     align-items: center;
 }
 
-
-
-h4{
-    display: inline-block;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.3em;
-    text-shadow: 0 0 30px  #fff;
-    
-}
 #txtIngresarMensaje{
     margin-left: 50px;
 }
@@ -88,7 +85,6 @@ h4{
     background-color: #48ACF0;
 }
 
-
 .cifrador{
     display: none;
     margin-left: 20px;
@@ -97,6 +93,7 @@ h4{
     width: 900px; 
     text-align: center;
 }
+
 #contenedorCifrador{
     margin-top: 10px;
     display: inline-flex;
