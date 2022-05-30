@@ -443,24 +443,36 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
 * [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
+* [X] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [X] Usa VanillaJS.
+* [X] Implementa `cipher.encode`.
+* [X] Implementa `cipher.decode`.
+* [X] Pasa linter con configuración provista.
+* [X] Pasa pruebas unitarias.
+* [X] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [X] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [X] Interfaz permite escribir un texto para ser cifrado.
+* [X] Interfaz muestra el resultado del cifrado correctamente.
+* [X] Interfaz permite escribir un texto para ser descifrado.
+* [X] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [X] Cifra/descifra minúsculas
+* [X] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [X] Permite usar un `offset` negativo.
+
+    Cipher Cesar: 
+    
+      Ayuda a la usuaria a codificar y decodificar un mensaje de acuerdo a los caracteres que ella ingrese, indicandole con breves instrucciones la forma en la cual debe usar el cifrador, permitiendole a la par, copiar el mensaje cifrado o descifrado para que le sea más facil pegarlo en el recuadro izquierdo y de esta forma pueda descifrarlo o volverlo a cifrar para obtener un segundo resultado.
+      Cuenta con una pantalla de inicio que permite a la usuaria dirigirse al cifrador o bien, a un apartado con una breve información sobre el método de cifrado.
+      Por ultimo, en cada una de las pantallas cuenta con un botón de salida que la redirige hacia otra página, permitiendo que pueda salir del cifrador sin necesidad de cerrar el navegador.
+
+    Diseño: 
+    
+
+    
+
