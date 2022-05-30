@@ -467,17 +467,25 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
     Cipher Cesar: 
     
-      Ayuda a la usuaria a codificar y decodificar un mensaje de acuerdo a los caracteres que ella ingrese, indicandole con breves instrucciones la forma en la cual debe usar el cifrador, permitiendole a la par, copiar el mensaje cifrado o descifrado para que le sea más facil pegarlo en el recuadro izquierdo y de esta forma pueda descifrarlo o volverlo a cifrar para obtener un segundo resultado.
-      Cuenta con una pantalla de inicio que permite a la usuaria dirigirse al cifrador o bien, a un apartado con una breve información sobre el método de cifrado.
-      Por ultimo, en cada una de las pantallas cuenta con un botón de salida que la redirige hacia otra página, permitiendo que pueda salir del cifrador sin necesidad de cerrar el navegador.
+      Ayuda a la usuaria a codificar y decodificar un mensaje de acuerdo a los caracteres que ella ingrese, 
+      indicandole con breves instrucciones la forma en la cual debe usar el cifrador, permitiendole a la 
+      par, copiar el mensaje cifrado o descifrado para que le sea más facil pegarlo en el recuadro izquierdo
+       y de esta forma pueda descifrarlo o volverlo a cifrar para obtener un segundo resultado.
+
+      Cuenta con una pantalla de inicio que permite a la usuaria dirigirse al cifrador o bien, a un apartado
+      con una breve información sobre el método de cifrado.
+      Por ultimo, en cada una de las pantallas cuenta con un botón de salida que la redirige hacia otra página,
+      permitiendo que pueda salir del cifrador sin necesidad de cerrar el navegador.
 
     Diseño: 
 
-    En primera instancia se realizó un boceto a lapiz básico, de lo que era necesario para la usuaria de acuerdo al requerimiento de su historia.
+    En primera instancia se realizó un boceto a lapiz básico, de lo que era necesario para la usuaria de acuerdo
+     al requerimiento de su historia.
 
     ![Image text](https://github.com/OryChRamirez/LIM018-cipher/blob/main/src/img/boceto.jpeg)
 
-    Una vez se tuvo una idea básica, se eligió una paleta de colores de acuerdo a la imagenes que se quería implementar (escultura de Julio Cesar),
+    Una vez se tuvo una idea básica, se eligió una paleta de colores de acuerdo a la imagenes que se quería 
+    implementar (escultura de Julio Cesar),
     y en base a esto se trabajó el diseño base en FIGMA 
     
     https://www.figma.com/proto/fGCkLslvfDshT6G86ZWzVB/Untitled?node-id=1%3A6&scaling=min-zoom&page-id=0%3A1
@@ -486,7 +494,10 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
     El usuario final:
 
-    Los usuarios finales son un grupo de espías, por lo que requieren enviar mensajes secretos codificados y a la vez lograr decodificar los mensajes que sean recibidos de otros espías de la organización. Por tal motivo han solicitado la creación del cipher, de esta forma les tomará menos tiempo realizar las acciones antes descritas con la mensajería. 
+    Los usuarios finales son un grupo de espías, por lo que requieren enviar mensajes secretos codificados y
+    a la vez lograr decodificar los mensajes que sean recibidos de otros espías de la organización. Por tal
+    motivo han solicitado la creación del cipher, de esta forma les tomará menos tiempo realizar las acciones
+    antes descritas con la mensajería. 
 
 
     
