@@ -440,8 +440,8 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 ### Parte Obligatoria
 
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [X] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [X] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
 * [X] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
@@ -472,7 +472,22 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
       Por ultimo, en cada una de las pantallas cuenta con un botón de salida que la redirige hacia otra página, permitiendo que pueda salir del cifrador sin necesidad de cerrar el navegador.
 
     Diseño: 
+
+    En primera instancia se realizó un boceto a lapiz básico, de lo que era necesario para la usuaria de acuerdo al requerimiento de su historia.
+
+    ![Image text](https://github.com/OryChRamirez/LIM018-cipher/blob/main/src/img/boceto.jpeg)
+
+    Una vez se tuvo una idea básica, se eligió una paleta de colores de acuerdo a la imagenes que se quería implementar (escultura de Julio Cesar),
+    y en base a esto se trabajó el diseño base en FIGMA 
     
+    https://www.figma.com/proto/fGCkLslvfDshT6G86ZWzVB/Untitled?node-id=1%3A6&scaling=min-zoom&page-id=0%3A1
+
+    Posteriormente, se fueron incluyendo botones adicionales que facilita las acciones a la usuaria final.
+
+    El usuario final:
+
+    Los usuarios finales son un grupo de espías, por lo que requieren enviar mensajes secretos codificados y a la vez lograr decodificar los mensajes que sean recibidos de otros espías de la organización. Por tal motivo han solicitado la creación del cipher, de esta forma les tomará menos tiempo realizar las acciones antes descritas con la mensajería. 
+
 
     
 
