@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Cipher</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+    <section id="inicio" class="inicio">
+        <h1>Cifrador de Mensajes</h1>
+        <h3>¡Bienvenida! Para cifrar o descifrar un mensaje debes hacer clic en CIFRADOR y seguir las instrucciones.</h3>
+        <div id="contenedorInicio">
+            <button id="btnCifrador" class="btn">CIFRADOR</button>
+            <button id="btnInfo" class="btn">INFORMACIÓN</button>
+            <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalirInicio" class="btn">SALIR</button></a>
+        </div>    
+    </section>
+   
+    <section id="cifrador" class="cifrador">
+        <h1>Cifrador de Mensajes</h1>
+        <header    id="contenedorCifrador">
+        <h4 id="txtIngresarMensaje" class="ingresarMensaje">Ingresa tu mensaje:</h4> 
+        <textarea type="text" name="mensaje" id="mensaje" class="cajaMsj"></textarea>
+        </header>
+        <div    id="contenedorDescifrador">
+        <h4 id="txtEnviarMensaje">Mensaje</h4>
+        <textarea type="text" readonly id="mensajeCifradoDescifrado" class="cajaMsj"></textarea>
+        </div>    
+        <div    id="cajaDesplazamiento">
+        <h4 id="txtoffset">Desplazamiento:</h4>
+        <input id="offset" type="number">
+        <button id="copy">✎Copiar</button>
+        </div>
+        <div id ="cajaBtnCifrador">
+        <button id="btnCifrar" class="btn">CIFRAR</button>
+        <button id="btnDescifrar"  class="btn">DESCIFRAR</button>
+        <button id="btnLimpiar"  class="btn">LIMPIAR</button>
+        <button id="btnVolverCifradorInicio" class="btn">INICIO</button>
+        <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalirCifrador" class="btn">SALIR</button></a>
+        </div>
+
+<h5>Intrucciones</h5>
+        <p>1 - Ingresa en el recuadro de la izquierda tu mensaje a codificar o decodificar.<br>
+            2- Ingresa en el recuadro inferior la cantidad de desplazamientos que deseas aplicar.<br>
+            3- Presiona el botón CIFRAR o DESCIFRAR según lo que desees aplicar a tu mensaje.<br>
+            4- Una vez termines puedes limpiar los recuadros de texto presionando el botón LIMPIAR.
+        </p>
+    </section>
+
+    <section id="informacion" >
+        <h1>¿Qué es un Cifrador de Mensajes?</h1>
+        <p class="informacion">Es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.</p>
+        <div id="cajaBtnInfo" >
+            <button id="btnCifradorInfo" class="btn">CIFRADOR</button>
+            <button id="btnVolverInfoInicio" class="btn">INICIO</button>
+            <a href="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"><button id="btnSalirInfo" class="btn">SALIR</button></a>
+
+        </div>
+
+    </section>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

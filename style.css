@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow: hidden;
+    background: linear-gradient(160deg, #C0937A 30%, #CCDDE2 70%);
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/juliocesar007.png);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+h1{
+    margin-top: 10px;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 0 0 30px  #fff;
+}
+h3{
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    width: 800px;
+    text-shadow: 0 0 30px  #fff;
+}
+
+h4{
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    text-shadow: 0 0 30px  #fff;  
+}
+
+.inicio{    margin-left: 20px;
+    margin-top: 20px;
+    height: 500px;
+    width: 900px; 
+    justify-content: center;
+    text-align: center;
+}
+
+#contenedorInicio{
+    display: flex;
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#txtIngresarMensaje{
+    margin-left: 50px;
+}
+
+#txtEnviarMensaje{
+    position: static;
+    right: 0;
+}
+
+.btn{
+    background-color: #93A3BC;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height:34px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 30px #fff;;
+    cursor: pointer;
+}
+.btn:hover{
+    transition: background-color 1s;
+    background-color: #48ACF0;
+}
+
+.cifrador{
+    display: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 600px;
+    width: 900px; 
+    text-align: center;
+}
+
+#contenedorCifrador{
+    margin-top: 10px;
+    display: inline-flex;
+    width: 49%;
+    height: 230px;
+    align-items: center;
+    flex-direction: column;
+
+}
+#contenedorDescifrador{
+    margin-top: 10px;
+    display: inline-flex;
+
+    width: 49%;
+    height: 230px;
+    align-items: center;
+    flex-direction: column;
+}
+.cajaMsj{
+    width: 380px;
+    height: 180px;
+    border-radius: 5px;
+    margin-top: 20px; 
+    resize: none;
+    padding: 5px;
+}
+#cajaDesplazamiento{
+    display: flex;
+    width: 900px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;    
+}
+
+#offset{
+    border-radius: 5px;
+    width: 60px; 
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 1em;
+}
+
+p,h5{
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+#informacion{
+    display: none;
+    margin-top: 50px;
+    align-items: center;
+}
+#cajaBtnInfo{
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    flex-wrap:  wrap ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cajaBtnCifrador{
+    margin: 0 auto;
+    display: flex;
+    width: 600px;
+    height: 100px;
+    flex-wrap:  wrap ;
+    align-items: center;
+    justify-content: center;
+}
+.informacion{
+    background-color: rgb(255, 255, 255, .5);
+    text-align: center;
+    margin: 50px 50px 0px 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.3em;
+}
+#btnSalirInicio, #btnSalirInfo, #btnSalirCifrador{
+    background-color: orange;
+}
+#btnSalirCifrador, #btnVolverCifrador, #btnLimpiar, #btnDescifrar, #btnCifrar{
+    margin:0 10px;
+}
+#copy{
+    background-color: rgb(255, 255, 255, .2);
+    margin-left: 25px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+}
