@@ -27,6 +27,9 @@ const cipher = {
         }
       }
   return codeLetras;
+    }else if(string =="" || offset ==""){
+      
+      alert('Debes ingresar un mensaje y un desplazamiento');
     }else{
       throw new TypeError();
     }
@@ -40,14 +43,14 @@ const cipher = {
       for(let i=0;i<string.length;i++){
           codificador = string.charCodeAt(i);
           if(codificador >= 65 && codificador <= 90){
-          codificador = (string.charCodeAt(i) -65 - offset)%26 + 65;
+            codificador = (string.charCodeAt(i) -65 - offset)%26 + 65;
             if(codificador < 65){
               codificador = (string.charCodeAt(i) - 65 - offset)%26 + 65 + 26;
               codeLetras = codeLetras + String.fromCharCode(codificador);
             }else{
               codeLetras = codeLetras + String.fromCharCode(codificador);
             }
-        }else if(codificador >=97 && codificador <=122){
+           }else if(codificador >=97 && codificador <=122){
           codificador = (string.charCodeAt(i) -97 - offset)%26 + 97;
             if(codificador < 97){
               codificador = (string.charCodeAt(i) - 97 - offset)%26 + 97 + 26;
@@ -60,9 +63,11 @@ const cipher = {
         }
       }
   return codeLetras;
+      }else if(string =="" || offset ==""){
+      alert('Debes ingresar un mensaje y un desplazamiento');
     }else{
       throw new TypeError();
-}
+    }
 
   }}
 
